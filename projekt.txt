@@ -1,0 +1,141 @@
+🌐 Magyar magyarázat
+Topológia eszközei (Cisco Packet Tracer alapján)
+Routerek (R0–R3, Recepció, Iroda, Vendég, SzerverR)
+
+4331 típusú routerek, alhálózatok közötti forgalomirányításra.
+
+Subinterface-eket használnak VLAN-okhoz (pl. Gig0/0/0.10 → VLAN10).
+
+OSPF AREA 0 fut rajtuk, hogy dinamikusan cseréljenek útvonalakat.
+
+IPv4 és IPv6 címek kiosztva, SLAAC és DHCP támogatással.
+
+Switch-ek (Switch0–Switch6, szerversw0, szerversw3)
+
+Több portos Layer2 eszközök.
+
+EtherChannel konfiguráció (pl. Switch3 Fa0/1,4 → S2), hogy nagyobb sávszélességet és redundanciát adjanak.
+
+VLAN-ok (10,20,30,40,50,60,70,80,99) a hálózat szegmentálására.
+
+Rapid PVST+ a gyorsabb spanning tree konvergenciához.
+
+Portbiztonság a jogosulatlan eszközök kizárására.
+
+PC-k és Admin gépek
+
+Statikus IP címek az irodai gépeknél (pl. PC0: 192.168.10.1 → VLAN10).
+
+SLAAC (Stateless Address Autoconfiguration) az IPv6 címekhez.
+
+DHCP a recepció és stúdió wireless eszközeinél.
+
+Szerverek (Windows, Linux)
+
+Windows szerver: fájlszerver, DHCP szolgáltatás.
+
+Linux szerver: zárt rendszer, biztonsági funkciók.
+
+Tűzfal (ASA) a szerverfarmnál, hálózati biztonságért.
+
+Wireless eszközök (Tablet, Laptop, Smartphone)
+
+DHCP címkiosztás (pl. 192.168.30.100–112).
+
+Recepció és Stúdió hálózatban működnek.
+
+Mobilitást biztosítanak.
+
+Vendég hálózat (Cloud, TV)
+
+Külön alhálózat (168.200.0.0/30).
+
+Coax kapcsolat a TV-hez, képek megtekintésére.
+
+Miért pont így?
+VLAN-ok: szegmentálják az irodai, recepciós, stúdiós és szerverfarm hálózatokat → biztonság + teljesítmény.
+
+OSPF AREA 0: dinamikus routing, egyszerű bővíthetőség.
+
+EtherChannel: redundancia + nagyobb sávszélesség.
+
+DHCP + SLAAC: egyszerű címkiosztás a végfelhasználóknak.
+
+ACL-ek: forgalomszűrés, biztonság.
+
+SSH + VTY login: biztonságos eszközmenedzsment.
+
+HSRP: redundáns gateway IPv4/IPv6 esetén.
+
+Firewall: szerverfarm védelme.
+
+🇬🇧 English Explanation
+Devices in the Topology (Cisco Packet Tracer)
+Routers (R0–R3, Reception, Office, Guest, ServerR)
+
+Cisco 4331 routers, used for inter-VLAN routing.
+
+Subinterfaces configured for VLANs (e.g., Gig0/0/0.10 → VLAN10).
+
+OSPF AREA 0 for dynamic route exchange.
+
+IPv4 and IPv6 addressing with SLAAC and DHCP support.
+
+Switches (Switch0–Switch6, server switches)
+
+Layer2 devices connecting PCs and routers.
+
+EtherChannel (e.g., Switch3 Fa0/1,4 → S2) for bandwidth aggregation and redundancy.
+
+VLANs (10,20,30,40,50,60,70,80,99) for segmentation.
+
+Rapid PVST+ for faster spanning tree convergence.
+
+Port security to prevent unauthorized access.
+
+PCs and Admin machines
+
+Static IP addressing in office VLANs (e.g., PC0: 192.168.10.1 → VLAN10).
+
+SLAAC for IPv6 autoconfiguration.
+
+DHCP for reception and studio wireless devices.
+
+Servers (Windows, Linux)
+
+Windows server: file server, DHCP services.
+
+Linux server: closed system, security functions.
+
+ASA Firewall in the server farm for protection.
+
+Wireless devices (Tablets, Laptops, Smartphones)
+
+DHCP-based addressing (e.g., 192.168.30.100–112).
+
+Operate in Reception and Studio networks.
+
+Provide mobility.
+
+Guest network (Cloud, TV)
+
+Separate subnet (168.200.0.0/30).
+
+Coax connection to TV for media viewing.
+
+Why this configuration?
+VLANs: segmentation of office, reception, studio, and server farm → better security and performance.
+
+OSPF AREA 0: dynamic routing, scalable design.
+
+EtherChannel: redundancy and higher throughput.
+
+DHCP + SLAAC: simplified IP address management.
+
+ACLs: traffic filtering for security.
+
+SSH + VTY login: secure device management.
+
+HSRP: redundant gateway for IPv4/IPv6.
+
+Firewall: protects the server farm.
