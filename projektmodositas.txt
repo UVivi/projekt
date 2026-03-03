@@ -1,0 +1,11 @@
+Klines gépről is mehet automatikus mentes
+szervezeti egységek
+házirend GPO
+DHCP scope options
+DNS forwarder 
+Server name indexhtml.local
+give acces to doku
+GPO képernyőképek
+nem hyperv kornyezetet kivenni
+Widowsbol kiszedni a weboldalt
+
